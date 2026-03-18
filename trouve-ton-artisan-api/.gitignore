@@ -1,0 +1,11 @@
+# Dépendances (trop lourd pour Git)
+node_modules/
+
+# Secrets et Config (SÉCURITÉ)
+env/.env
+env/.env.dev
+env/.env.prod
+
+# Logs et divers
+npm-debug.log*
+.DS_Store

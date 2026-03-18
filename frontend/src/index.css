@@ -1,0 +1,19 @@
+/* Nettoyage radical anti-bord blanc */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Empêche le scroll horizontal */
+  position: relative;
+}
+
+/* Force tous les éléments (Header, Footer, Div) à rester dans le cadre */
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}

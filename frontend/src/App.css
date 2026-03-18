@@ -1,0 +1,25 @@
+/* Empêche les marges bizarres et le scroll horizontal */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Force tous les éléments à calculer leur taille avec le padding inclus */
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Toute la hauteur de l'écran */
+  width: 100%;
+}
+
+main {
+  flex: 1; /* Pousse le footer en bas si la page est vide */
+  width: 100%;
+}

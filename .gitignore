@@ -1,0 +1,14 @@
+# Ignore les dossiers de dépendances partout
+node_modules/
+**/node_modules/
+
+# Ignore les fichiers de configuration sensibles
+.env
+**/ .env
+
+# Ignore les dossiers de build (React)
+dist/
+**/dist/
+
+# Fichiers système
+.DS_Store

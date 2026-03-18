@@ -1,0 +1,28 @@
+@import 'fonts'; // ou @use 'fonts'; selon ta version de Sass
+/* Déclaration de la police Graphik Regular */
+@font-face {
+  font-family: 'Graphik';
+  src: url('../assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Déclaration de la police Graphik Bold */
+@font-face {
+  font-family: 'Graphik';
+  src: url('../assets/fonts/Graphik-Bold-Trial.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+// On cible TOUT le monde, y compris les éléments de formulaire
+*, *::before, *::after {
+  font-family: 'MaPoliceCustom', sans-serif !important;
+}
+
+// On insiste sur les éléments qui résistent souvent
+html, body, input, textarea, button, select, h1, h2, h3, h4, h5, h6 {
+  font-family: 'MaPoliceCustom', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
